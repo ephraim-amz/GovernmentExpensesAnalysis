@@ -25,7 +25,7 @@ import seaborn as sns
 from scipy.stats import norm
 from scipy import stats
 ```
-
+---
 > I didn't import all the libraries at once, I imported them when I needed them
 
 ### 2. Dataset importation
@@ -105,6 +105,8 @@ Scatter of the *data_scaled* dataset
 
 ![Correlation circle with years label](images/data_scaled_scatter.png)
 
+---
+
 ### 6. Data Analysis with the **`seaborn`** library
 
 **Heatmap**
@@ -133,7 +135,7 @@ plt.savefig('first_six_pairplot.png')
 plt.show()
 ![Second pairplot](images/last_six_pairplot.png)
 ```
-
+---
 6.a Distribution and probability plots using the **`scipy`** library
 
 ![Dette column distribution](images/dette_distplot.png)
