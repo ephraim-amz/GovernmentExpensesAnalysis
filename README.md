@@ -63,14 +63,14 @@ def cercle_corr(data,labels):
 
 `cercle_corr` function used with the _ministeres_ column which contains the ministeres names
 
-![Correlation circle with ministers label](circle_corr_minister_names.png)
+![Correlation circle with ministers label](images/circle_corr_minister_names.png)
 
 ``` python
 cercle_corr(data,ministeres)
 ```
 
 `cercle_corr` function used with the _annees_ column which contains the years
-![Correlation circle with years label](circle_corr_years.png)
+![Correlation circle with years label](images/circle_corr_years.png)
 
 ``` python
 cercle_corr(data,annees)
@@ -85,18 +85,18 @@ hi.ward(data)
 `scipy.cluster.hierarchy` **`dendogram`** hierarchical clustering function
 
 
-![Correlation circle with years label](dendogram_ministers_labels.png)
+![Correlation circle with years label](images/dendogram_ministers_labels.png)
 
-![Correlation circle with years label](dendogram_years_label.png)
+![Correlation circle with years label](images/dendogram_years_label.png)
 ### 5. Utilisation of the **_KMeans_** clustering method for the scaled data
 
 Scatter of cluster centers
 
-![Correlation circle with years label](cluster_center_scatter.png)
+![Correlation circle with years label](images/cluster_center_scatter.png)
 
 Scatter of the *data_scaled* dataset
 
-![Correlation circle with years label](data_scaled_scatter.png)
+![Correlation circle with years label](images/data_scaled_scatter.png)
 
 ### 6. Data Analysis with the **`seaborn`** library
 
@@ -108,7 +108,7 @@ sns.heatmap(df.corr(), annot=True, linewidths=.5, fmt= '.2f',ax=ax)
 plt.show()
 ```
 
-![Heatmap](dataset_correlation_heatmap.png)
+![Heatmap](images/dataset_correlation_heatmap.png)
 
 **Pairplots**
 ``` python
@@ -117,14 +117,14 @@ sns.pairplot(df[first_six_columns],height=2.5)
 plt.savefig('first_six_pairplot.png')
 plt.show()
 ```
-![First pairplots](first_six_pairplot.png)
+![First pairplots](images/first_six_pairplot.png)
 
 ``` python
 first_six_columns = df.columns[0:6]
 sns.pairplot(df[first_six_columns],height=2.5)
 plt.savefig('first_six_pairplot.png')
 plt.show()
-![Second paiplot](last_six_pairplot.png)
+![Second pairplot](images/last_six_pairplot.png)
 ```
 
 
