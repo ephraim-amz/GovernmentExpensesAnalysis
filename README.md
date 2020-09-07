@@ -131,3 +131,7 @@ plt.show()
 6.a Distribution and distribution plots using the **`scipy`** library
 
 6.b Creation of a new DataFrame with the log values of the dataframe
+
+``` python
+df_log = pd.DataFrame(np.log(df))
+```
