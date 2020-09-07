@@ -82,6 +82,14 @@ cercle_corr(data,annees)
 hi.ward(data)
 ```
 
+Example of a returned line
+``` python
+[  5.        ,   6.        ,   4.38862165,   2.        ]
+```
+The distance between the 5th and 6th cluster is 4.39 and they are 2 unique singletons.
+
+This method returns an array containing i order : The number of first cluster, the number of the second cluster, the distance between the two clusters and the number of singletons at n index.
+
 `scipy.cluster.hierarchy` **`dendogram`** hierarchical clustering function
 
 ![Correlation circle with years label](images/dendogram_ministers_labels.png)
