@@ -126,6 +126,7 @@ sns.pairplot(df[first_six_columns],height=2.5)
 plt.savefig('first_six_pairplot.png')
 plt.show()
 ```
+
 ![First pairplots](images/first_six_pairplot.png)
 
 ``` python
@@ -133,8 +134,9 @@ first_six_columns = df.columns[0:6]
 sns.pairplot(df[first_six_columns],height=2.5)
 plt.savefig('first_six_pairplot.png')
 plt.show()
-![Second pairplot](images/last_six_pairplot.png)
 ```
+![Second pairplot](images/last_six_pairplot.png)
+
 ---
 6.a Distribution and probability plots using the **`scipy`** library
 
