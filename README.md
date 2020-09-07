@@ -84,7 +84,6 @@ hi.ward(data)
 
 `scipy.cluster.hierarchy` **`dendogram`** hierarchical clustering function
 
-
 ![Correlation circle with years label](images/dendogram_ministers_labels.png)
 
 ![Correlation circle with years label](images/dendogram_years_label.png)
@@ -127,8 +126,11 @@ plt.show()
 ![Second pairplot](images/last_six_pairplot.png)
 ```
 
+6.a Distribution and probability plots using the **`scipy`** library
 
-6.a Distribution and distribution plots using the **`scipy`** library
+![Dette column distribution](images/dette_distplot.png)
+
+![Dette column prob plot](images/dette_probplot.png)
 
 6.b Creation of a new DataFrame with the log values of the dataframe
 
