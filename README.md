@@ -128,6 +128,7 @@ sns.pairplot(df[first_six_columns],height=2.5)
 plt.savefig('first_six_pairplot.png')
 plt.show()
 ```
+
 ![First pairplots](images/first_six_pairplot.png)
 
 ``` python
@@ -136,7 +137,6 @@ sns.pairplot(df[first_six_columns],height=2.5)
 plt.savefig('first_six_pairplot.png')
 plt.show()
 ```
-
 ![Second pairplot](images/last_six_pairplot.png)
 
 ---
@@ -166,6 +166,7 @@ def distp(data,column,**kwargs):
 ``` python
 df_log = pd.DataFrame(np.log(df))
 ```
+
 ![Agriculture column prob plot](images/agriculture_probplot.png)
 
 ![Scaled Agriculture column prob plot](images/agriculture_scaled_probplot.png)
