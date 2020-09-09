@@ -119,6 +119,8 @@ plt.show()
 
 ![Heatmap](images/dataset_correlation_heatmap.png)
 
+Based on the heatmap, most columns are not correlated between them.
+
 **Pairplots**
 ``` python
 first_six_columns = df.columns[0:6]
@@ -133,17 +135,46 @@ first_six_columns = df.columns[0:6]
 sns.pairplot(df[first_six_columns],height=2.5)
 plt.savefig('first_six_pairplot.png')
 plt.show()
-![Second pairplot](images/last_six_pairplot.png)
 ```
+
+![Second pairplot](images/last_six_pairplot.png)
+
 ---
 6.a Distribution and probability plots using the **`scipy`** library
 
-![Dette column distribution](images/dette_distplot.png)
+**`distp`** function to redunce code redundancy
 
-![Dette column prob plot](images/dette_probplot.png)
+I used `kwargs` to allow optionally to save the plots
+
+``` python
+def distp(data,column,**kwargs):
+    dl_distplot = kwargs.get('dl_distplot',None)
+    distplot_img_name = kwargs.get('distplot_img_name',None)
+    dl_probplot = kwargs.get('dl_probplot',None)
+    probplot_img_name = kwargs.get('probplot_img_name',None)
+    sns.distplot(data[column],fit=norm)
+    if (dl_distplot):
+        plt.savefig(distplot_img_name)
+    fig = plt.figure()
+    res = stats.probplot(data[column],plot=plt)
+    if (dl_probplot):
+        plt.savefig(probplot_img_name)
+```
 
 6.b Creation of a new DataFrame with the log values of the dataframe
 
 ``` python
 df_log = pd.DataFrame(np.log(df))
 ```
+![Agriculture column prob plot](images/agriculture_probplot.png)
+
+![Scaled Agriculture column prob plot](images/agriculture_scaled_probplot.png)
+
+![Agriculture log column prob plot](images/agriculture_log_probplot.png)
+
+
+![Agriculture column distribution](images/agriculture_distplot.png)
+
+![Scaled Agriculture column prob plot](images/agriculture_scaled_distplot.png)
+
+![Agriculture column with log distribution](images/agriculture_log_distplot.png)
